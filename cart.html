@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biancake's - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Biancake's</h1>
+        <nav>
+            <a href="home.html" target ="_blank">Home</a>
+            <a href="shop.html" target ="_blank">Shop</a>
+            <a href="cart and contact.html" target ="_blank">Cart</a>
+        </nav>
+    </header>
+<style>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #f4a261;
+    padding: 20px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3.5rem;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px;
+}
+
+/* Shop Page Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery div {
+    margin: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Cart Section */
+.cart-items {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.cart-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item span {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #061f34;
+    color: white;
+}
+</style>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-items">
+        <h2>Your Cart</h2>
+        <div id="cart-items-list"></div>
+        <p>Total: ₱<span id="total-price">0</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <!-- <p><strong>Facebook:</strong> <a href="https://www.facebook.com/Bianca Marie A. Bernabe" target="_blank">https://www.facebook.com/Zakari.Pp20</a></p> -->
+        <p><strong>Email:</strong> <a href="mailto:bernabebiancamarie@gmail.com">bernabebiancamarie@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Biancake's - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
